@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Site pessoal do Ricardo Zanlorenzi, ainda em esqueleto: três páginas (`index.html`, `projects.html`, `contato.html`) em HTML + CSS puro, sem build e sem dependências. No ar em https://novo-projeto-ashen.vercel.app/ (repositório `novo-projeto` no GitHub; a Vercel publica a cada `git push` na `main`). O remote `antigo` é o site anterior (minha-primeira-pagina-wine.vercel.app) — nunca dê push nele sem o dono pedir. O dono é iniciante: explique em português simples.
+Site pessoal do Ricardo Zanlorenzi: quatro páginas (`index.html`, `projects.html`, `sobre.html`, `contato.html`) em HTML + CSS puro, sem build e sem dependências. No ar em https://novo-projeto-ashen.vercel.app/ (repositório `novo-projeto` no GitHub; a Vercel publica a cada `git push` na `main`). O remote `antigo` é o site anterior (minha-primeira-pagina-wine.vercel.app) — nunca dê push nele sem o dono pedir. O dono é iniciante: explique em português simples.
 
 ## Comandos
 

@@ -5,19 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos — Ricardo Zanlorenzi</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos usados só nesta página */
+    .projeto {
+      margin-top: 28px;
+    }
+    .projeto h2 {
+      margin-bottom: 4px;
+    }
+    .projeto p {
+      margin: 4px 0;
+    }
+    .links-projeto {
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
   <nav class="menu">
     <a href="index.html">Início</a>
     <a href="projects.html" aria-current="page">Projetos</a>
+    <a href="sobre.html">Sobre</a>
     <a href="contato.html">Contato</a>
   </nav>
 
   <h1>Projetos</h1>
-  <h2>Site de treino</h2>
-  <p>O primeiro site que construí enquanto aprendia a usar o Claude Code, cheio de testes e experimentos.</p>
+  <p>O que construí até agora enquanto aprendo a programar com o Claude Code.</p>
 
-  <h2>Este portfólio</h2>
-  <p>O site em que você está agora, onde reúno quem eu sou, o que faço e como falar comigo.</p>
+  <div class="projeto">
+    <h2>Este portfólio</h2>
+    <p>Meu site pessoal, feito só com HTML e CSS e publicado na Vercel. Tem apresentação, projetos e um formulário de contato que chega no meu e-mail.</p>
+    <p class="links-projeto"><a href="https://github.com/ricardozanlorenzimd/novo-projeto">Ver o código no GitHub</a></p>
+  </div>
+
+  <div class="projeto">
+    <h2>Site de treino</h2>
+    <p>O primeiro site que construí enquanto aprendia a usar o Claude Code, cheio de testes e experimentos — de uma lista de projetos em JavaScript a uma data de atualização puxada do GitHub.</p>
+    <p class="links-projeto"><a href="https://minha-primeira-pagina-wine.vercel.app/">Ver o site</a> · <a href="https://github.com/ricardozanlorenzimd/minha-primeira-pagina">Ver o código</a></p>
+  </div>
+
+  <div class="projeto">
+    <h2>Meus 5 melhores prompts</h2>
+    <p>Os pedidos ao Claude Code que mais deram certo, com o que cada um me ensinou.</p>
+    <p class="links-projeto"><a href="https://minha-primeira-pagina-wine.vercel.app/prompt.html">Ler os prompts</a></p>
+  </div>
+
+  <div class="projeto">
+    <h2>Como eu construí</h2>
+    <p>O registro passo a passo de uma mudança feita com o Claude Code: primeiro o plano, depois a execução em blocos, com uma revisão minha entre cada um.</p>
+    <p class="links-projeto"><a href="https://minha-primeira-pagina-wine.vercel.app/processo.html">Ver o processo</a></p>
+  </div>
+
+  <h2>Próximos projetos</h2>
+  <ul>
+    <li><strong>Organizador de tarefas:</strong> um aplicativo simples para as tarefas do dia a dia.</li>
+    <li><strong>Automação para o trabalho:</strong> uma ferramenta que faça sozinha uma tarefa repetitiva.</li>
+  </ul>
 </body>
 </html>
