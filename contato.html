@@ -19,6 +19,31 @@
     .botao-email:hover {
       background: #084a8c;
     }
+
+    /* Formulário de contato */
+    .formulario label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+    }
+    .formulario input,
+    .formulario textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; /* a largura inclui a borda, para não passar da tela */
+      margin-top: 4px;
+      padding: 8px 10px;
+      border: 1px solid #c9bfa6;
+      border-radius: 6px;
+      font: inherit;
+      background: #fff;
+    }
+    .formulario button {
+      margin-top: 16px;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -38,5 +63,23 @@
     <li>Instagram: <a href="https://www.instagram.com/ricardozanlorenzimd/">@ricardozanlorenzimd</a></li>
     <li>GitHub: <a href="https://github.com/ricardozanlorenzimd">ricardozanlorenzimd</a></li>
   </ul>
+
+  <h2>Ou me mande uma mensagem por aqui</h2>
+  <!-- O Formspree recebe o formulário e me encaminha por e-mail (formulário xoeeoooq em formspree.io) -->
+  <form class="formulario" action="https://formspree.io/f/xoeeoooq" method="POST">
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+    <label for="email">Seu e-mail</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <!-- Assunto do e-mail que chega para mim -->
+    <input type="hidden" name="_subject" value="Nova mensagem pelo site">
+
+    <button class="botao-email" type="submit">Enviar mensagem</button>
+  </form>
 </body>
 </html>
