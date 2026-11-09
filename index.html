@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início — Ricardo Zanlorenzi</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos usados só nesta página: foto ao lado da apresentação */
+    .apresentacao {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .apresentacao img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover; /* corta a foto num quadrado sem deformar */
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+    .apresentacao p {
+      margin: 0;
+    }
+    /* Em telas estreitas (celular), a foto fica em cima do texto */
+    @media (max-width: 480px) {
+      .apresentacao {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="menu">
@@ -14,6 +39,9 @@
   </nav>
 
   <h1>Ricardo Zanlorenzi</h1>
-  <p>Oi, que bom ter você por aqui! Estou aprendendo a construir coisas na prática e, pelo caminho, faço sites pequenos e úteis para resolver problemas do dia a dia.</p>
+  <div class="apresentacao">
+    <img src="photo.jpg" alt="Corredor com paredes verdes e uma porta de vidro ao fundo" width="160" height="160">
+    <p>Oi, que bom ter você por aqui! Estou aprendendo a construir coisas na prática e, pelo caminho, faço sites pequenos e úteis para resolver problemas do dia a dia.</p>
+  </div>
 </body>
 </html>
