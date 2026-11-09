@@ -3,114 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ricardo Zanlorenzi</title>
+  <title>Início — Ricardo Zanlorenzi</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Estilos usados só nesta página */
-    .local {
-      margin-top: 0;
-      font-size: 1.1rem;
-      color: #555;
-    }
-    .contato {
-      display: inline-block;
-      padding: 10px 18px;
-      border-radius: 8px;
-      background: #0b5cad;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .contato:hover {
-      background: #084a8c;
-    }
-    .rodape {
-      margin-top: 2.5rem;
-      padding-top: 12px;
-      border-top: 1px solid #e8e0cc;
-      font-size: 0.85rem;
-      color: #555;
-    }
-    .rodape p {
-      margin: 0 0 6px;
-    }
-  </style>
 </head>
 <body>
   <nav class="menu">
     <a href="index.html" aria-current="page">Início</a>
     <a href="projects.html">Projetos</a>
-    <a href="prompt.html">Prompts</a>
-    <a href="processo.html">Processo</a>
-    <a href="ferramentas.html">Ferramentas</a>
-    <a href="about.html">Sobre</a>
+    <a href="contato.html">Contato</a>
   </nav>
 
-  <h1>Olá, eu sou Ricardo Zanlorenzi</h1>
-  <p class="local">📍 Brasil</p>
-
-  <p>
-    Estou aprendendo a programar e a criar coisas para a web com a ajuda do
-    Claude Code. Aprendo fazendo: cada página deste site é um passo para
-    transformar ideias em projetos de verdade.
-  </p>
-
-  <h2>Projetos</h2>
-  <p>
-    Já terminei uma página com os
-    <a href="prompt.html">meus 5 melhores prompts</a>, e agora estou
-    construindo um site pessoal completo, com portfólio e blog.
-  </p>
-  <p><a href="projects.html">Veja todos os projetos →</a></p>
-
-  <h2>Como eu construí</h2>
-  <p>
-    Adicionei o campo <strong>tecnologias</strong> aos meus projetos em três
-    camadas: <strong>tipo</strong> (<code>projetos.js</code>) →
-    <strong>dados</strong> (<code>projetos.js</code>) →
-    <strong>página</strong> (<code>projects.html</code>). Antes, fiz um plano
-    com os arquivos e a ordem, e executei em blocos, com 3 checkpoints de
-    revisão entre eles.
-  </p>
-  <p><a href="processo.html">Veja o plano, os checkpoints e as decisões →</a></p>
-
-  <h2>Fale comigo</h2>
-  <p>
-    Gostou da página ou quer trocar uma ideia? Me mande uma mensagem:
-  </p>
-  <p>
-    <a class="contato" href="mailto:rica.zanlorenzi@gmail.com">rica.zanlorenzi@gmail.com</a>
-  </p>
-
-  <footer class="rodape">
-    <p id="atualizado">Última atualização: carregando…</p>
-    <p>
-      🔒 Essa data vem do GitHub por uma função na Vercel que usa a variável
-      de ambiente <code>GITHUB_TOKEN</code>. Ela fica só nas configurações da
-      Vercel, e não no git, porque é uma senha: o repositório é público, e
-      qualquer pessoa que lesse o código poderia usar o token.
-    </p>
-  </footer>
-
-  <script>
-    // Pede ao servidor da Vercel a data do último commit (api/atualizado.js)
-    var campo = document.getElementById("atualizado");
-    fetch("/api/atualizado")
-      .then(function (resposta) {
-        if (!resposta.ok) throw new Error();
-        return resposta.json();
-      })
-      .then(function (info) {
-        var data = new Date(info.data).toLocaleDateString("pt-BR", {
-          day: "numeric", month: "long", year: "numeric",
-        });
-        campo.textContent = "Última atualização: " + data + " — “" + info.mensagem + "”";
-      })
-      .catch(function () {
-        // Abrindo o arquivo direto no computador não existe servidor,
-        // então esta parte só funciona no site publicado.
-        campo.textContent = "Última atualização: disponível só no site publicado.";
-      });
-  </script>
+  <h1>Início</h1>
+  <p>Aqui vai a apresentação do site.</p>
 </body>
 </html>

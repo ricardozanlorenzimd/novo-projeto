@@ -15,10 +15,7 @@ PASTA = os.getcwd()
 MENU = [
     ("index.html", "Início"),
     ("projects.html", "Projetos"),
-    ("prompt.html", "Prompts"),
-    ("processo.html", "Processo"),
-    ("ferramentas.html", "Ferramentas"),
-    ("about.html", "Sobre"),
+    ("contato.html", "Contato"),
 ]
 
 

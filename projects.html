@@ -5,120 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos — Ricardo Zanlorenzi</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Estilos usados só nesta página */
-    li {
-      margin-bottom: 0.9rem;
-    }
-    .status {
-      display: inline-block;
-      padding: 0 8px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      background: #e8e0cc;
-      color: #555;
-    }
-    .status.concluido {
-      background: #dcefe3;
-      color: #1f7a4d;
-    }
-    /* Campo novo: etiquetas de tecnologia, com contorno azul */
-    .tecnologias {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 4px;
-    }
-    .tecnologias span {
-      padding: 0 8px;
-      border: 1px solid #0b5cad;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      color: #0b5cad;
-    }
-  </style>
 </head>
 <body>
   <nav class="menu">
     <a href="index.html">Início</a>
     <a href="projects.html" aria-current="page">Projetos</a>
-    <a href="prompt.html">Prompts</a>
-    <a href="processo.html">Processo</a>
-    <a href="ferramentas.html">Ferramentas</a>
-    <a href="about.html">Sobre</a>
+    <a href="contato.html">Contato</a>
   </nav>
 
-  <h1>Meus projetos</h1>
-  <p>
-    O que eu já fiz e o que quero construir enquanto aprendo a programar.
-    Vou atualizando esta página conforme cada ideia sai do papel.
-  </p>
-  <p><a href="processo.html">Veja como adicionei as tecnologias, passo a passo →</a></p>
-
-  <!-- A lista começa vazia: o script abaixo preenche com os dados de projetos.js -->
-  <ul id="lista-projetos"></ul>
-  <noscript>
-    <p>Ative o JavaScript no navegador para ver a lista de projetos.</p>
-  </noscript>
-
-  <!-- 1º carrega os dados (molde + lista PROJETOS) -->
-  <script src="projetos.js"></script>
-
-  <!-- 2º monta a interface: um item <li> para cada projeto -->
-  <script>
-    // Texto que aparece na etiqueta para cada valor de "status"
-    var NOMES_STATUS = {
-      concluido: "Concluído",
-      andamento: "Em andamento",
-      planejado: "Planejado",
-    };
-
-    var lista = document.getElementById("lista-projetos");
-
-    PROJETOS.forEach(function (projeto) {
-      var item = document.createElement("li");
-
-      // Nome em negrito (vira link se o projeto tiver "link")
-      var nome = document.createElement("strong");
-      if (projeto.link) {
-        var link = document.createElement("a");
-        link.href = projeto.link;
-        link.textContent = projeto.nome;
-        nome.appendChild(link);
-      } else {
-        nome.textContent = projeto.nome;
-      }
-      item.appendChild(nome);
-      item.appendChild(document.createTextNode(" "));
-
-      // Etiqueta de status (verde quando concluído)
-      var status = document.createElement("span");
-      status.className = "status";
-      if (projeto.status === "concluido") {
-        status.classList.add("concluido");
-      }
-      status.textContent = NOMES_STATUS[projeto.status];
-      item.appendChild(status);
-
-      // Descrição
-      var descricao = document.createElement("div");
-      descricao.textContent = projeto.descricao;
-      item.appendChild(descricao);
-
-      // O CAMPO NOVO: tecnologias, uma etiqueta para cada uma
-      if (projeto.tecnologias.length > 0) {
-        var tecnologias = document.createElement("div");
-        tecnologias.className = "tecnologias";
-        projeto.tecnologias.forEach(function (nomeTecnologia) {
-          var etiqueta = document.createElement("span");
-          etiqueta.textContent = nomeTecnologia;
-          tecnologias.appendChild(etiqueta);
-        });
-        item.appendChild(tecnologias);
-      }
-
-      lista.appendChild(item);
-    });
-  </script>
+  <h1>Projetos</h1>
+  <p>Aqui vai a lista dos meus projetos.</p>
 </body>
 </html>
