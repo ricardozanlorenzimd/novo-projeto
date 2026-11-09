@@ -16,7 +16,3 @@ Site pessoal do Ricardo Zanlorenzi, ainda em esqueleto: três páginas (`index.h
 - Se uma página ganhar JS: `var`, `textContent` (nunca `innerHTML` com dados), comentários em português.
 - Um hook arruma os espaços de todo `.html` editado — não precisa formatar à mão.
 - Planeje antes (arquivos + ordem) e trabalhe em blocos pequenos com pausa para revisão quando o dono pedir.
-
-## Pegadinha
-
-`api/atualizado.js` (função da Vercel que dava a data de "Última atualização") sobrou do site antigo: nenhuma página a usa agora e a variável `GITHUB_TOKEN` não está configurada no projeto novo. Se for usá-la de novo, o token fica só nas configurações da Vercel, nunca no código (e mudar a variável exige Redeploy).
